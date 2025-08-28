@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,12 +21,11 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Avast_Security_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Avast Security Suite</span>
+              <span class="suite-name border-skipped">Avast Security Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Avast_Security_Suite" class="navigator-link ">
-                    <span>C:\Users\Aara Suthar\eclipse-workspace\com.gendigital.avastmobilesecurity\testng.xml</span>
+                    <span>C:\Users\Aara Suthar\git\Test\com.gendigital.avastmobilesecurity\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Avast_Security_Suite" class="hide-methods failed suite-Avast_Security_Suite"> (hide)</a> <!-- hide-methods failed suite-Avast_Security_Suite -->
-                      <a href="#" panel-name="suite-Avast_Security_Suite" class="show-methods failed suite-Avast_Security_Suite"> (show)</a> <!-- show-methods failed suite-Avast_Security_Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Avast_Security_Suite" class="hide-methods skipped suite-Avast_Security_Suite"> (hide)</a> <!-- hide-methods skipped suite-Avast_Security_Suite -->
+                      <a href="#" panel-name="suite-Avast_Security_Suite" class="show-methods skipped suite-Avast_Security_Suite"> (show)</a> <!-- show-methods skipped suite-Avast_Security_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Avast_Security_Suite">
+                    <div class="method-list-content skipped suite-Avast_Security_Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Avast_Security_Suite" title="com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning" class="method navigator-link" hash-for-method="testScan">testScan</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Avast_Security_Suite" title="com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning" class="method navigator-link" hash-for-method="testToastMessageAfterScan">testToastMessageAfterScan</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Avast_Security_Suite -->
+                    </div> <!-- method-list-content skipped suite-Avast_Security_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,74 +118,91 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Avast_Security_Suite" class="panel Avast_Security_Suite">
-          <div class="suite-Avast_Security_Suite-class-failed">
+          <div class="suite-Avast_Security_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testScan">
-                  </a> <!-- testScan -->
-                  <span class="method-name">testScan</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: Locator Strategy &apos;name&apos; is not supported for this session
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+                  <a name="testToastMessageAfterScan">
+                  </a> <!-- testToastMessageAfterScan -->
+                  <span class="method-name">testToastMessageAfterScan</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Connection refused: getsockopt
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;AARASUTHAR&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: io.appium.java_client.AppiumDriver
-Capabilities {appActivity: com.avast.android.mobilesec..., appPackage: com.avast.android.mobilesec..., appWaitActivity: *, automationName: UiAutomator2, databaseEnabled: false, desired: {appPackage: com.avast.android.mobilesec..., appWaitActivity: *, automationName: UiAutomator2, deviceName: POCO C55, noReset: true, platformName: android, udid: nr6dcit4pvjzmrtc}, deviceApiLevel: 34, deviceManufacturer: Xiaomi, deviceModel: 22127PC95I, deviceName: nr6dcit4pvjzmrtc, deviceScreenDensity: 320, deviceScreenSize: 720x1650, deviceUDID: nr6dcit4pvjzmrtc, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 49, takesScreenshot: true, udid: nr6dcit4pvjzmrtc, viewportRect: {height: 1601, left: 0, top: 49, width: 720}, warnings: {}, webStorageEnabled: false}
-Session ID: b5ccb7d8-06b7-4233-a9a8-250fbced048d
-*** Element info: {Using=name, value=getStartedButton}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:262)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:261)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:117)
-	at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at com.avastsecurity.PageObjects.AvastHomePage.clickGetStarted(AvastHomePage.java:32)
-	at com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning.testScan(Validating_The_Toast_Message_After_Scanning.java:39)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:97)
+	at com.avastsecurity.Test.BaseTest.setup(BaseTest.java:56)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:760)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	... 36 more
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Avast_Security_Suite-class-failed -->
+          </div> <!-- suite-Avast_Security_Suite-class-skipped -->
         </div> <!-- panel Avast_Security_Suite -->
         <div panel-name="test-xml-Avast_Security_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Aara Suthar\eclipse-workspace\com.gendigital.avastmobilesecurity\testng.xml</span>
+            <span class="header-content">C:\Users\Aara Suthar\git\Test\com.gendigital.avastmobilesecurity\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Avast Security Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.avastsecurity.utilities.ExtentReportListener&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Validating The Toast Message After Scanning&quot;&gt;
+&lt;suite name=&quot;Avast Security Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Avast Tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating The Toast Message After Scanning --&gt;
+  &lt;/test&gt; &lt;!-- Avast Tests --&gt;
 &lt;/suite&gt; &lt;!-- Avast Security Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,7 +214,7 @@ Session ID: b5ccb7d8-06b7-4233-a9a8-250fbced048d
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Validating The Toast Message After Scanning (1 class)</span>
+                <span class="test-name">Avast Tests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -226,14 +242,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testScan')
+data.setCell(0, 1, 'testToastMessageAfterScan')
 data.setCell(0, 2, 'com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning')
-data.setCell(0, 3, 513);
+data.setCell(0, 3, 0);
 window.suiteTableData['Avast_Security_Suite']= { tableData: data, tableDiv: 'times-div-Avast_Security_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 513 ms</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Avast_Security_Suite">
               </div> <!-- times-div-Avast_Security_Suite -->
             </div> <!-- times-div -->
@@ -261,18 +277,30 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">setup</span>
+                <span class="method-name">setupReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="test-method">
+              <div class="configuration-class before">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testScan</span>
-                <span class="method-start">12564 ms</span>
+                <span class="method-name">setup</span>
+                <span class="method-start">186 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">848 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testToastMessageAfterScan</span>
+                <span class="method-start">888 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">898 ms</span>
+              </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">13152 ms</span>
+                <span class="method-name">tearDownReport</span>
+                <span class="method-start">986 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

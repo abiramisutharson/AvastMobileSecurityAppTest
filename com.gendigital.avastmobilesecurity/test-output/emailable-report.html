@@ -9,43 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Avast Security Suite</th></tr>
-<tr><td><a href="#t0">Validating The Toast Message After Scanning</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">550</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Avast Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">15,835</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Avast Security Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Validating The Toast Message After Scanning &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning</td><td><a href="#m0">testScan</a></td><td rowspan="1">1756362898495</td><td rowspan="1">513</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Avast Security Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Avast Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning</td><td><a href="#m0">testToastMessageAfterScan</a></td><td rowspan="1">1756387122788</td><td rowspan="1">1036</td></tr></tbody>
 </table>
-<h2>Validating The Toast Message After Scanning</h2><h3 id="m0">com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning#testScan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: Locator Strategy &apos;name&apos; is not supported for this session
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;AARASUTHAR&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: io.appium.java_client.AppiumDriver
-Capabilities {appActivity: com.avast.android.mobilesec..., appPackage: com.avast.android.mobilesec..., appWaitActivity: *, automationName: UiAutomator2, databaseEnabled: false, desired: {appPackage: com.avast.android.mobilesec..., appWaitActivity: *, automationName: UiAutomator2, deviceName: POCO C55, noReset: true, platformName: android, udid: nr6dcit4pvjzmrtc}, deviceApiLevel: 34, deviceManufacturer: Xiaomi, deviceModel: 22127PC95I, deviceName: nr6dcit4pvjzmrtc, deviceScreenDensity: 320, deviceScreenSize: 720x1650, deviceUDID: nr6dcit4pvjzmrtc, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 49, takesScreenshot: true, udid: nr6dcit4pvjzmrtc, viewportRect: {height: 1601, left: 0, top: 49, width: 720}, warnings: {}, webStorageEnabled: false}
-Session ID: b5ccb7d8-06b7-4233-a9a8-250fbced048d
-*** Element info: {Using=name, value=getStartedButton}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:117)
-	at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at com.avastsecurity.PageObjects.AvastHomePage.clickGetStarted(AvastHomePage.java:32)
-	at com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning.testScan(Validating_The_Toast_Message_After_Scanning.java:39)
+<h2>Avast Tests</h2><h3 id="m0">com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning#testToastMessageAfterScan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.fail(String)&quot; because &quot;com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning.test&quot; is null
+	at com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning.testToastMessageAfterScan(Validating_The_Toast_Message_After_Scanning.java:78)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

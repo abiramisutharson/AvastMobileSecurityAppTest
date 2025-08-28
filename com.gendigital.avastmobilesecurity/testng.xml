@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Avast Security Suite">
+    <listeners>
+        <listener class-name="com.avastsecurity.utilities.ExtentReportListener"/>
+    </listeners>
+    <test name="Validating The Toast Message After Scanning">
+        <classes>
+            <class name="com.avastsecurity.Test.Validating_The_Toast_Message_After_Scanning"/>
+        </classes>
+    </test>
+</suite>
